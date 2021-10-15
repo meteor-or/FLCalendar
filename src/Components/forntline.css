@@ -8,23 +8,27 @@ h5 {
 .frontline {
   width: 90%;
   margin: 0 auto;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 3% 2%;
 }
 /* 상자 전체 */
 .frontlineItem {
   padding: 0 1rem;
-  margin-bottom: 50px;
+  display: grid;
   background-color: #eaeef1;
   border-radius: 20px;
+  display: flex;
 }
 
-.forntlinetitle {
-  text-indent: 28px;
-  padding: 2rem 0;
-  font-size: 2rem;
-}
 /* 이미지 */
 .imgBox {
-  display: flex;
+  width: 50%;
+}
+.forntlinetitle {
+  padding: 2rem 0;
+  font-size: 2rem;
 }
 .imgBox img {
   max-width: 100%;
