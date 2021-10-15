@@ -1,5 +1,4 @@
 .rbc-calendar {
-  padding: 10px;
 }
 
 .rbc-row .rbc-date-cell {
@@ -9,11 +8,31 @@
   flex: 1 1;
   min-width: 0;
   padding-right: 5px;
-  text-align: left;
+  text-align: center;
 }
-.titleOfSite {
-  text-align: left;
-  padding: 48px 0;
-  border-bottom: 1px solid lightgray;
-  text-indent: 48px;
+/* 툴바 */
+.rbc-toolbar {
+  display: flex;
+  position: fixed;
+  top: 10px;
+  z-index: 101;
+}
+.rbc-btn-group {
+  margin: 0 20px;
+}
+.rbc-toolbar .rbc-toolbar-label {
+  text-align-last: left;
+}
+/* 헤더 */
+.rbc-header {
+  border-bottom: none;
+  font-weight: normal;
+}
+
+.rbc-off-range-bg {
+  background-color: #fff;
+}
+
+.rbc-date-cell > a {
+  font-size: 0.8rem;
 }

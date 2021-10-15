@@ -1,7 +1,7 @@
 import React from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
-import "moment/locale/ko";
+// import "moment/locale/ko";
 import events from "./events";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "./calendar.css";
@@ -11,12 +11,12 @@ const localizer = momentLocalizer(moment);
 let formats = {
   monthHeaderFormat: (date, culture, localizer) =>
     localizer.format(date, "yyyy[.]MM", culture),
+  weekdayFormat: (date, culture, localizer) =>
+    localizer.format(date, "ddd", culture),
 };
-
 function Calendarpart(params) {
   return (
-    <div>
-      <h1>이번 달 전장 일정은?</h1>
+    <div className="calendar">
       <Calendar
         localizer={localizer}
         defaultDate={new Date()}
@@ -25,7 +25,7 @@ function Calendarpart(params) {
         events={events}
         formats={formats}
         components={{ toolbar: CustomToolbar }}
-        style={{ height: "80vh" }}
+        style={{ height: "calc(100vh - 50px);", width: "85vw" }}
         eventPropGetter={(event, start, end, isSelected) => {
           let newStyle = {
             backgroundColor: "lightgrey",

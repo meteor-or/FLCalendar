@@ -9,6 +9,8 @@
 }
 body {
   font-family: "Noto Sans KR", "Roboto", sans-serif;
+  position: absolute;
+  top: 50px;
 }
 ul {
   list-style: none;
@@ -18,9 +20,13 @@ h1 {
   margin: 0;
 }
 /* App */
-.App {
-  width: 60vw;
-  margin: 0 auto;
-  border-right: 1px solid lightgray;
-  border-left: 1px solid lightgray;
+
+.yahoo {
+  width: 15vw;
+  height: calc(100vh - 50px);
+  margin: 0;
+}
+
+.contents {
+  display: flex;
 }

@@ -1,0 +1,10 @@
+.top-bar {
+  position: fixed;
+  width: 100vw;
+  border-bottom: 1px solid #000;
+  height: 50px;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  display: flex;
+}
