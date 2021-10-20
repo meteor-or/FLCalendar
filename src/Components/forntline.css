@@ -6,20 +6,23 @@ h5 {
 }
 
 .frontline {
-  width: 90%;
   margin: 0 auto;
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 3% 2%;
+  border-left: 1px solid #eee;
+  padding: 50px 0;
 }
+
 /* 상자 전체 */
 .frontlineItem {
-  padding: 0 1rem;
-  display: grid;
+  padding: 0 2rem;
   background-color: #eaeef1;
   border-radius: 20px;
   display: flex;
+  width: 80%;
+  margin-left: 50px;
 }
 
 /* 이미지 */
@@ -38,8 +41,6 @@ h5 {
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 /* 인포 */
-.forntlineInfo {
-}
 .forntlineInfo li {
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
@@ -50,6 +51,7 @@ h5 {
 .infoBox {
   margin-left: 28px;
   padding: 10px;
+  width: 50%;
 }
 .scoreInfo {
   margin: 2rem 0;

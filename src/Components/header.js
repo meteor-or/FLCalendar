@@ -1,5 +1,4 @@
 import "./header.css";
-import CustomToolbar from "./CustomToolbar";
 
 function Header() {
   return (

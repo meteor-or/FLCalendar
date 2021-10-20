@@ -11,7 +11,6 @@ export default class CustomToolbar extends Toolbar {
   render() {
     return (
       <div className="rbc-toolbar">
-        <div className="rbc-toolbar-label">{this.props.label}</div>
         <button type="button" onClick={() => this.navigate("TODAY")}>
           today
         </button>
@@ -23,6 +22,7 @@ export default class CustomToolbar extends Toolbar {
             &gt;
           </button>
         </div>
+        <div className="rbc-toolbar-label">{this.props.label}</div>
       </div>
     );
   }

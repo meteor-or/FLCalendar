@@ -20,13 +20,6 @@ h1 {
   margin: 0;
 }
 /* App */
-
-.yahoo {
-  width: 15vw;
-  height: calc(100vh - 50px);
-  margin: 0;
-}
-
-.contents {
+.main-section {
   display: flex;
 }

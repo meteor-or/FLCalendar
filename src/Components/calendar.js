@@ -5,7 +5,7 @@ import moment from "moment";
 import events from "./events";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "./calendar.css";
-import CustomToolbar from "./CustomToolbar.js";
+import CustomToolbar from "./customToolbar.js";
 
 const localizer = momentLocalizer(moment);
 let formats = {
@@ -25,7 +25,7 @@ function Calendarpart(params) {
         events={events}
         formats={formats}
         components={{ toolbar: CustomToolbar }}
-        style={{ height: "calc(100vh - 50px);", width: "85vw" }}
+        style={{ height: "93vh", width: "85vw" }}
         eventPropGetter={(event, start, end, isSelected) => {
           let newStyle = {
             backgroundColor: "lightgrey",
