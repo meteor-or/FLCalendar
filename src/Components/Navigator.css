@@ -3,4 +3,17 @@ nav {
   margin: 0;
   display: flex;
   flex-direction: column;
+  position: sticky;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+}
+
+a:hover {
+  background-color: #373a3c;
+  color: #fff;
 }
