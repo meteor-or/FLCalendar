@@ -10,6 +10,11 @@
   padding-right: 5px;
   text-align: center;
 }
+
+/* 이벤트 바 */
+.rbc-event-content {
+  color: #fff;
+}
 /* 툴바 */
 .rbc-toolbar {
   display: flex;

@@ -70,14 +70,14 @@ h5 {
   content: "";
   height: 2px;
   border-radius: 2px;
-  background: #1a73e8;
+  background: #373a3c;
   position: absolute;
   bottom: -10px;
   left: 0;
   width: 100%;
 }
 .titleOfScore {
-  min-width: 100px;
+  min-width: 80px;
   padding: 1rem 0;
   font-weight: bold;
   text-indent: 1rem;

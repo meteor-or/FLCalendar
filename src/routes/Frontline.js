@@ -1,5 +1,5 @@
 import React from "react";
-import "./forntline.css";
+import "./Forntline.css";
 
 const frontlines = [
   {
@@ -52,7 +52,6 @@ function Frontline() {
             <div className="imgBox">
               <h2 className="forntlinetitle">{data.title}</h2>
               <img src={data.img} alt={data.title}></img>
-              <p>여기다 뭔가 적었으면 좋겠다</p>
             </div>
             <div className="infoBox">
               <div className="scoreInfo">
@@ -85,11 +84,7 @@ function Frontline() {
                 <div className="descOfPattern">{data.pattern1}</div>
                 <div className="descOfPattern">{data.pattern2}</div>
               </div>
-              <div className="moreInfoWrap">
-                <a href="#" className="moreInfo">
-                  더 자세히 보기→
-                </a>
-              </div>
+              <div className="moreInfoWrap"></div>
             </div>
           </div>
         </>

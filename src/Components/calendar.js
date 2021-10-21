@@ -32,19 +32,20 @@ function Calendarpart(params) {
             color: "black",
             borderRadius: "10px",
             border: "none",
+            borderRadius: "none",
           };
 
           if (event.onsal) {
-            newStyle.backgroundColor = "#FCFFA6";
+            newStyle.backgroundColor = "#f6bf26";
           }
           if (event.secure) {
-            newStyle.backgroundColor = "#C1FFD7";
+            newStyle.backgroundColor = "#7986cb";
           }
           if (event.sealRock) {
-            newStyle.backgroundColor = "#FE8F8F";
+            newStyle.backgroundColor = "#e67c73";
           }
           if (event.shatter) {
-            newStyle.backgroundColor = "#B5DEFF";
+            newStyle.backgroundColor = "#039be5";
           }
 
           return {

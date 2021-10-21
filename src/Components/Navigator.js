@@ -4,12 +4,14 @@ import "./Navigator.css";
 
 function Navigator() {
   return (
-    <nav>
-      <Link to="/">달력</Link>
-      <Link to="/frontline">전장</Link>
-      <Link to="/job">직업</Link>
-      <Link to="/macro">매크로</Link>
-    </nav>
+    <div className="gnb">
+      <nav>
+        <Link to="/">달력</Link>
+        <Link to="/general">공통규칙</Link>
+        <Link to="/frontline">전장규칙</Link>
+        <Link to="/macro">매크로</Link>
+      </nav>
+    </div>
   );
 }
 

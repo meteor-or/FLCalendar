@@ -1,0 +1,10 @@
+td {
+  text-align: center;
+}
+thead {
+  background-color: #eaeef1;
+}
+
+tbody > tr {
+  border-bottom: 10px solid #000;
+}
