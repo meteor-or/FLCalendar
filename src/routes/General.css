@@ -1,4 +1,8 @@
 .general {
+  max-width: 1440px;
   border-left: 1px solid #eee;
-  width: 85vw;
+}
+
+p {
+  white-space: pre-line;
 }

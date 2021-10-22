@@ -1,4 +1,4 @@
 .macro {
   border-left: 1px solid #eee;
-  width: 85vw;
+  max-width: 1440px;
 }

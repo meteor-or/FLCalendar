@@ -44,7 +44,7 @@ const generalRule = {
     },
     {
       title: "투쟁심",
-      desc: "투쟁심는 플레이어를 죽이거나 도움을 줬을 때 상승하는 게이지로 힐량과 딜량을 늘려줍니다. 최대 레벨은 100이며 20이 증가할 때마다 효과가 등가합니다. 사망시 게이지가 절반으로 떨어집니다.",
+      desc: "투쟁심는 플레이어를 죽이거나 도움을 줬을 때 상승하는 게이지로 힐량과 딜량을 늘려줍니다. \n 최대 레벨은 100이며 20이 증가할 때마다 효과가 등가합니다. \n 사망시 게이지가 절반으로 떨어집니다.",
       table: {
         header: ["상태", "점수", "효과"],
         contents: [
@@ -90,11 +90,13 @@ const generalRule = {
 };
 
 function general() {
+  console.log(generalRule.매칭조건.table);
+  console.log(generalRule.특수규칙[0].table);
   return (
     <div className="general">
       <div className="매칭조건">
         <h2>매칭조건</h2>
-        {/* <Table data={generalRule.매칭조건.table} /> */}
+        <Table data={generalRule.매칭조건.table} />
       </div>
       <div className="기본규칙">
         <h2>기본규칙</h2>
@@ -107,9 +109,13 @@ function general() {
       </div>
       <div className="특수규칙">
         <h2>특수규칙</h2>
-        <Table data={generalRule.특수규칙[0].table} />
-        <Table data={generalRule.특수규칙[1].table} />
-        <Table data={generalRule.특수규칙[3].table} />
+        {generalRule.특수규칙.map((data) => (
+          <>
+            <h3>{data.title}</h3>
+            <p>{data.desc}</p>
+            <Table data={data.table} />
+          </>
+        ))}
       </div>
     </div>
   );

@@ -2,26 +2,38 @@ import React from "react";
 import "./Table.css";
 
 function table(props) {
-  return (
-    <table>
-      <thead>
-        <tr>
-          {props.data.header.map((item) => (
-            <th width="200">{item}</th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {props.data.contents.map((item) => (
+  if (typeof props.data == "object") {
+    return (
+      <table>
+        <thead>
           <tr>
-            {item.map((inner) => (
-              <td>{inner}</td>
+            {props.data.header.map((item) => (
+              <th width="250">{item}</th>
             ))}
           </tr>
-        ))}
-      </tbody>
-    </table>
-  );
+        </thead>
+        {Array.isArray(props.data.contents[0]) ? (
+          <tbody>
+            {props.data.contents.map((item) => (
+              <tr>
+                {item.map((inner) => (
+                  <td>{inner}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        ) : (
+          <tbody>
+            {props.data.contents.map((item) => (
+              <td>{item}</td>
+            ))}
+          </tbody>
+        )}
+      </table>
+    );
+  } else {
+    return null;
+  }
 }
 
 export default table;

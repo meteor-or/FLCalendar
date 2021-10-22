@@ -4,6 +4,7 @@ body {
   font-family: "Spoqa Han Sans Neo", sans-serif;
   position: absolute;
   top: 50px;
+  margin: 0;
   background-color: #fff;
 }
 ul {
@@ -12,6 +13,13 @@ ul {
 }
 h1 {
   margin: 0;
+}
+div {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
 /* App */
 .main-section {

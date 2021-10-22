@@ -6,6 +6,7 @@ h5 {
 }
 
 .frontline {
+  max-width: 1440px;
   margin: 0 auto;
   display: grid;
   grid-auto-columns: 1fr;
