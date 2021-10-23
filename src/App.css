@@ -25,3 +25,25 @@ a {
 .main-section {
   display: flex;
 }
+
+/* 헤딩 타이틀 언더바 css */
+.heading {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+  padding: 8px 0;
+  position: relative;
+}
+.heading span {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.heading span::after {
+  content: "";
+  height: 2px;
+  border-radius: 2px;
+  background: #373a3c;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+}
