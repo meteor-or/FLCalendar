@@ -13,17 +13,15 @@ h5 {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 3% 2%;
   border-left: 1px solid #eee;
-  padding: 50px 0;
+  padding: 20px 10px;
 }
 
 /* 상자 전체 */
 .frontlineItem {
-  padding: 0 2rem;
+  padding: 0 50px;
   background-color: #eaeef1;
   border-radius: 20px;
   display: flex;
-  width: 80%;
-  margin-left: 50px;
 }
 
 /* 이미지 */
@@ -56,26 +54,6 @@ h5 {
 }
 .scoreInfo {
   margin: 2rem 0;
-}
-.heading {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
-  margin: 1rem 0;
-  padding: 8px 0;
-  position: relative;
-}
-.heading span {
-  box-sizing: border-box;
-  position: relative;
-}
-.heading span::after {
-  content: "";
-  height: 2px;
-  border-radius: 2px;
-  background: #373a3c;
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 100%;
 }
 .titleOfScore {
   min-width: 80px;
