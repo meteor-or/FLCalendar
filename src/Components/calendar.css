@@ -1,10 +1,5 @@
-.rbc-calendar {
-}
-
+/**** mobile *****/
 .rbc-row .rbc-date-cell {
-  font-family: apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   flex: 1 1;
   min-width: 0;
   padding-right: 5px;
@@ -14,19 +9,6 @@
 /* 이벤트 바 */
 .rbc-event-content {
   color: #fff;
-}
-/* 툴바 */
-.rbc-toolbar {
-  display: flex;
-  position: fixed;
-  top: 10px;
-  z-index: 101;
-}
-.rbc-btn-group {
-  margin: 0 20px;
-}
-.rbc-toolbar .rbc-toolbar-label {
-  text-align-last: left;
 }
 /* 헤더 */
 .rbc-header {
@@ -40,4 +22,30 @@
 
 .rbc-date-cell > a {
   font-size: 0.8rem;
+}
+.rbc-toolbar {
+  margin: 10px;
+}
+.rbc-btn-group {
+  margin: 0 20px;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  /* 툴바 */
+  .rbc-toolbar {
+    display: flex;
+    position: fixed;
+    top: 10px;
+    z-index: 101;
+    margin: 0;
+  }
+  .rbc-toolbar .rbc-toolbar-label {
+    text-align-last: left;
+  }
+}
+
+/* pc */
+
+@media screen and (min-width: 1280px) {
 }

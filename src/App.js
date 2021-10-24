@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 import Frontline from "./routes/Frontline";
 import Home from "./routes/Home";
 import General from "./routes/General";
@@ -9,19 +10,77 @@ import Header from "./Components/header";
 
 import "./App.css";
 
+const Desktop = ({ children }) => {
+  const isDesktop = useMediaQuery({ minWidth: 1280 });
+  return isDesktop ? children : null;
+};
+const Tablet = ({ children }) => {
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1279 });
+  return isTablet ? children : null;
+};
+const Mobile = ({ children }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  return isMobile ? children : null;
+};
 function App() {
   return (
     <div>
-      <HashRouter>
-        <Header />
-        <div className="main-section">
-          <Navigator />
-          <Route path="/" exact={true} component={Home} />
-          <Route path="/frontline" component={Frontline} />
-          <Route path="/general" component={General} />
-          <Route path="/macro" component={Macro} />
-        </div>
-      </HashRouter>
+      {/* Destop */}
+      <Desktop>
+        <HashRouter>
+          <header>
+            <Header />
+          </header>
+          <main className="main">
+            <aside>
+              <Navigator />
+            </aside>
+            <div className="main_contents">
+              <Route path="/" exact={true} component={Home} />
+              <Route path="/frontline" componFent={Frontline} />
+              <Route path="/general" component={General} />
+              <Route path="/macro" component={Macro} />
+            </div>
+          </main>
+        </HashRouter>
+      </Desktop>
+
+      {/* Tablet */}
+      <Tablet>
+        <HashRouter>
+          <header>
+            <Header />
+          </header>
+          <main className="main">
+            <aside>
+              <Navigator />
+            </aside>
+            <div className="main_contents">
+              <Route path="/" exact={true} component={Home} />
+              <Route path="/frontline" component={Frontline} />
+              <Route path="/general" component={General} />
+              <Route path="/macro" component={Macro} />
+            </div>
+          </main>
+        </HashRouter>
+      </Tablet>
+
+      {/* Mobile */}
+
+      <Mobile>
+        <HashRouter>
+          <header>
+            <Header />
+            <Navigator />
+          </header>
+          <main className="main">
+            <Route path="/" exact={true} component={Home} />
+            <Route path="/frontline" component={Frontline} />
+            <Route path="/general" component={General} />
+            <Route path="/macro" component={Macro} />
+          </main>
+        </HashRouter>
+      </Mobile>
     </div>
   );
 }
