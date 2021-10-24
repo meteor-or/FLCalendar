@@ -1,4 +1,5 @@
 import React from "react";
+import "./FLcard.css";
 
 function FLcard(props) {
   return (
@@ -7,10 +8,10 @@ function FLcard(props) {
         <>
           <div className="frontlineItem">
             <div className="imgBox">
-              <h2 className="forntlinetitle">{data.title}</h2>
               <img src={data.img} alt={data.title}></img>
             </div>
             <div className="infoBox">
+              <h2 className="forntlinetitle">{data.title}</h2>
               <div className="scoreInfo">
                 <h3 className="heading">
                   <span>점수</span>
@@ -41,7 +42,7 @@ function FLcard(props) {
                 <div className="descOfPattern">{data.pattern1}</div>
                 <div className="descOfPattern">{data.pattern2}</div>
               </div>
-              <div className="moreInfoWrap"></div>
+              {/* <div className="moreInfoWrap"></div> */}
             </div>
           </div>
         </>

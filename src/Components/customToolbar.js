@@ -5,7 +5,6 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 export default class CustomToolbar extends Toolbar {
   componentDidMount() {
     const view = this.props.view;
-    console.log(view);
   }
 
   render() {

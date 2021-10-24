@@ -1,14 +1,32 @@
+/* mobile */
+
 .top-bar {
   position: fixed;
   width: 100vw;
-  border-bottom: 1px solid #dadce0;
   height: 50px;
   top: 0;
   z-index: 100;
   display: flex;
+  line-height: 50px;
   background-color: #fff;
+  z-index: 101;
+}
+.logo {
+  font-size: 1.3rem;
+  margin-left: 30px;
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .top-bar {
+    position: fixed;
+    background-color: pink;
+  }
 }
 
-.logo {
-  margin-left: 3%;
+/* pc */
+
+@media screen and (min-width: 1280px) {
+  .top-bar {
+    background-color: blue;
+  }
 }

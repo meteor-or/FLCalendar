@@ -1,7 +1,6 @@
 import React from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
-// import "moment/locale/ko";
 import events from "./events";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "./calendar.css";
@@ -25,7 +24,7 @@ function Calendarpart(params) {
         events={events}
         formats={formats}
         components={{ toolbar: CustomToolbar }}
-        style={{ height: "93vh", width: "85vw" }}
+        style={{ height: "calc(100vh - 100px)", width: "100%" }}
         eventPropGetter={(event, start, end, isSelected) => {
           let newStyle = {
             backgroundColor: "lightgrey",

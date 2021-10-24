@@ -1,9 +1,10 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
+/* mobile */
 body {
   font-family: "Spoqa Han Sans Neo", sans-serif;
   position: absolute;
-  top: 50px;
+  top: 100px;
   margin: 0;
   background-color: #fff;
 }
@@ -11,7 +12,11 @@ ul {
   list-style: none;
   padding: 0;
 }
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
 }
 div {
@@ -22,7 +27,7 @@ a {
   text-decoration: none;
 }
 /* App */
-.main-section {
+.main {
   display: flex;
 }
 
@@ -46,4 +51,18 @@ a {
   bottom: -10px;
   left: 0;
   width: 100%;
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  body {
+    top: 50px;
+  }
+  .main_contents {
+    width: 85vw;
+  }
+}
+
+/* pc */
+
+@media screen and (min-width: 1280px) {
 }

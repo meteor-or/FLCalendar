@@ -37,9 +37,8 @@ function App() {
             </aside>
             <div className="main_contents">
               <Route path="/" exact={true} component={Home} />
-              <Route path="/frontline" componFent={Frontline} />
+              <Route path="/frontline" component={Frontline} />
               <Route path="/general" component={General} />
-              <Route path="/macro" component={Macro} />
             </div>
           </main>
         </HashRouter>
@@ -59,7 +58,6 @@ function App() {
               <Route path="/" exact={true} component={Home} />
               <Route path="/frontline" component={Frontline} />
               <Route path="/general" component={General} />
-              <Route path="/macro" component={Macro} />
             </div>
           </main>
         </HashRouter>
@@ -77,7 +75,6 @@ function App() {
             <Route path="/" exact={true} component={Home} />
             <Route path="/frontline" component={Frontline} />
             <Route path="/general" component={General} />
-            <Route path="/macro" component={Macro} />
           </main>
         </HashRouter>
       </Mobile>
