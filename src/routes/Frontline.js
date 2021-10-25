@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FLcard from "../Components/FLcard";
 import "./Forntline.css";
+import Slider from "react-slick";
 
 function Frontline() {
   const [frontlines, setfrontlines] = useState([

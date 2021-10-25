@@ -1,49 +1,51 @@
 .frontline {
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 10px 20px;
-
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
 }
-
+.sliderWrap {
+  max-width: 640px;
+}
+.slick-arrow {
+  background-color: #000;
+}
 /* 상자 전체 */
 .frontlineItem {
+  max-width: 480px;
+  margin: 30px;
+  padding-bottom: 20px;
   background-color: #eaeef1;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  max-width: 480px;
   box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%),
     0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);
 }
 
 /* 이미지 */
-.imgBox {
+.frontline__imgBox {
   width: 100%;
 }
-.forntlinetitle {
+.infoBox__title {
   padding: 1rem 0;
   font-size: 1.4rem;
 }
-.imgBox img {
+.frontline__imgBox img {
   max-width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
 /* 인포 */
-.forntlineInfo li {
+.scoreList .scoreItem {
   display: flex;
   padding: 10px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
-.infoBox {
+.frontline__infoBox {
   padding: 0 10px;
 }
-.forntlineInfo li:last-child {
+.scoreList .scoreItem:last-child {
   border-bottom: none;
 }
-.titleOfScore {
+.score__title {
   min-width: 80px;
   font-weight: bold;
   margin-left: 1rem;
@@ -75,9 +77,12 @@
 
 /* tablet */
 @media screen and (min-width: 768px) {
-  .infoBox {
+  .frontline__infoBox {
     margin: 0 28px;
     padding: 10px;
+  }
+  .slick-slider {
+    margin: 0 50px;
   }
 }
 

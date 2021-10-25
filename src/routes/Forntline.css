@@ -1,3 +1,6 @@
 .forntline_page {
   border-left: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
