@@ -4,7 +4,6 @@ import { useMediaQuery } from "react-responsive";
 import Frontline from "./routes/Frontline";
 import Home from "./routes/Home";
 import General from "./routes/General";
-import Macro from "./routes/Macro";
 import Navigator from "./Components/Navigator";
 import Header from "./Components/header";
 
@@ -23,6 +22,8 @@ const Mobile = ({ children }) => {
   return isMobile ? children : null;
 };
 function App() {
+  // const [activePage, setActivePage] = useState(0);
+
   return (
     <div>
       {/* Destop */}

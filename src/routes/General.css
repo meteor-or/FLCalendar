@@ -1,5 +1,5 @@
 /* mobile */
-.general {
+.general_page {
   padding: 0 15px;
 }
 li h2 {
@@ -34,7 +34,7 @@ li h2 {
 }
 /* tablet */
 @media screen and (min-width: 768px) {
-  .general {
+  .general_page {
     max-width: 1440px;
     border-left: 1px solid #eee;
     padding-left: 20px;
@@ -42,7 +42,7 @@ li h2 {
     margin: 0;
   }
 
-  .general > li {
+  .general_page > li {
     padding: 50px;
     padding-top: 30px;
     margin-bottom: 100px;

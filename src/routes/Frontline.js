@@ -47,7 +47,7 @@ function Frontline() {
   ]);
 
   return (
-    <div className="forntlinePage">
+    <div className="forntline_page">
       <FLcard data={frontlines} />
     </div>
   );

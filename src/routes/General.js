@@ -95,7 +95,7 @@ function General() {
   });
 
   return (
-    <ul className="general">
+    <ul className="general_page">
       <li className="매칭조건">
         <h2 className="heading">
           <span>매칭조건</span>

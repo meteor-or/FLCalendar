@@ -8,7 +8,7 @@
   position: sticky;
   position: fixed;
   top: 50px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   z-index: 100;
 }
 .nav_item {
@@ -27,11 +27,15 @@
   font-weight: bold;
   opacity: 1;
   border-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 /* tablet */
 @media screen and (min-width: 768px) {
   .gnb {
     height: auto;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 50px;
   }
   .nav {
     position: sticky;
@@ -45,6 +49,10 @@
   .nav_item {
     text-align: center;
     padding: 10px 0;
+  }
+
+  .clicked {
+    border-bottom: none;
   }
 }
 

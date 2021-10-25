@@ -1,5 +1,6 @@
 import React from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
+import { useMediaQuery } from "react-responsive";
 import moment from "moment";
 import events from "./events";
 import "react-big-calendar/lib/css/react-big-calendar.css";
@@ -14,6 +15,7 @@ let formats = {
     localizer.format(date, "ddd", culture),
 };
 function Calendarpart(params) {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
   return (
     <div className="calendar">
       <Calendar
@@ -24,7 +26,11 @@ function Calendarpart(params) {
         events={events}
         formats={formats}
         components={{ toolbar: CustomToolbar }}
-        style={{ height: "calc(100vh - 100px)", width: "100%" }}
+        style={
+          isMobile
+            ? { height: "calc(100vh - 100px)", width: "100%" }
+            : { height: "calc(100vh - 50px)", width: "100%" }
+        }
         eventPropGetter={(event, start, end, isSelected) => {
           let newStyle = {
             backgroundColor: "lightgrey",

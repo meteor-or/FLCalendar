@@ -1,10 +1,11 @@
 /* mobile */
-.Calendar {
+.calendar_page {
   width: 100vw;
+  overflow: hidden;
 }
 /* tablet */
 @media screen and (min-width: 768px) {
-  .Calendar {
+  .calendar_page {
     width: 85vw;
     position: relative;
     top: 0;
@@ -14,7 +15,7 @@
 /* pc */
 
 @media screen and (min-width: 1280px) {
-  .Calendar {
+  .calendar_page {
     width: 85vw;
   }
 }

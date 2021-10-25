@@ -1,7 +1,6 @@
 .frontline {
   max-width: 1440px;
   margin: 0 auto;
-  border-left: 1px solid #eee;
   padding: 10px 20px;
 
   display: flex;
@@ -17,7 +16,6 @@
   max-width: 480px;
   box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%),
     0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);
-  margin: 10px;
 }
 
 /* 이미지 */
@@ -37,7 +35,7 @@
 .forntlineInfo li {
   display: flex;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 .infoBox {
   padding: 0 10px;

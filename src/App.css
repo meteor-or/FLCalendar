@@ -4,7 +4,7 @@
 body {
   font-family: "Spoqa Han Sans Neo", sans-serif;
   position: absolute;
-  top: 100px;
+  top: 94px;
   margin: 0;
   background-color: #fff;
 }
@@ -29,6 +29,7 @@ a {
 /* App */
 .main {
   display: flex;
+  width: 100vw;
 }
 
 /* 헤딩 타이틀 언더바 css */
@@ -52,6 +53,7 @@ a {
   left: 0;
   width: 100%;
 }
+
 /* tablet */
 @media screen and (min-width: 768px) {
   body {

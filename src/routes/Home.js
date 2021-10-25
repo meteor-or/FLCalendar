@@ -4,7 +4,7 @@ import "./Home.css";
 
 function A(params) {
   return (
-    <div className="Calendar">
+    <div className="calendar_page">
       <CalendarPart />
     </div>
   );
