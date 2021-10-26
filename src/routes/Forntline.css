@@ -3,4 +3,25 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* 슬라이더 */
+.sliderWrap {
+  width: 100%;
+}
+.slick-arrow:before {
+  color: #000;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .slick-slider {
+    margin: 0 50px;
+  }
+}
+
+/* pc */
+@media screen and (min-width: 1280px) {
 }

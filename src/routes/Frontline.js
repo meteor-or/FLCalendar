@@ -4,6 +4,25 @@ import "./Forntline.css";
 import Slider from "react-slick";
 
 function Frontline() {
+  let settings = {
+    dots: true,
+    fade: false,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          fade: true,
+          dots: true,
+        },
+      },
+    ],
+  };
   const [frontlines, setfrontlines] = useState([
     {
       title: "외곽 유격지대(제압전)",
@@ -49,7 +68,13 @@ function Frontline() {
 
   return (
     <div className="forntline_page">
-      <FLcard data={frontlines} />
+      <div className="sliderWrap">
+        <Slider {...settings}>
+          {frontlines.map((a, i) => {
+            return <FLcard data={frontlines[i]} i={i} key={i} />;
+          })}
+        </Slider>
+      </div>
     </div>
   );
 }

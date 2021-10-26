@@ -3,12 +3,7 @@
   display: flex;
   justify-content: center;
 }
-.sliderWrap {
-  max-width: 640px;
-}
-.slick-arrow {
-  background-color: #000;
-}
+
 /* 상자 전체 */
 .frontlineItem {
   max-width: 480px;
