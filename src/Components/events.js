@@ -24,7 +24,7 @@ let DefaultEvents = [
 ];
 
 let Events = [];
-for (let i = 0; i < 30; i++) {
+for (let i = 0; i < 91; i++) {
   Events.push({
     title: DefaultEvents[0].title,
     start: new moment(DefaultEvents[0].start).add(i * 4, "days")._d,

@@ -17,7 +17,7 @@ function Frontline() {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          fade: true,
+          fade: false,
           dots: true,
         },
       },

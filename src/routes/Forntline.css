@@ -14,11 +14,26 @@
 .slick-arrow:before {
   color: #000;
 }
-
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
 /* tablet */
 @media screen and (min-width: 768px) {
   .slick-slider {
     margin: 0 50px;
+  }
+  .slick-prev {
+    left: -25px;
+  }
+  .slick-next {
+    right: -25px;
+  }
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 30px;
   }
 }
 

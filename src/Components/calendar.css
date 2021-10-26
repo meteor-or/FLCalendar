@@ -7,8 +7,13 @@
 }
 
 /* 이벤트 바 */
+.rbc-day-slot .rbc-background-event,
+.rbc-event {
+  cursor: default;
+}
 .rbc-event-content {
   color: #fff;
+  cursor: default;
 }
 /* 헤더 */
 .rbc-header {
@@ -29,12 +34,23 @@
 .rbc-btn-group {
   margin: 0 20px;
 }
+.rbc-btn-group {
+  display: flex;
+  align-items: center;
+}
 
-/* tablet */
+/* 툴바 */
+
+.rbc-toolbar {
+  justify-content: space-evenly;
+}
+.rbc-toolbar .rbc-toolbar-label {
+  padding: 0 20px;
+}
+/**** tablet ****/
 @media screen and (min-width: 768px) {
   /* 툴바 */
   .rbc-toolbar {
-    display: flex;
     position: fixed;
     top: 10px;
     z-index: 101;
