@@ -4,25 +4,13 @@
   justify-content: center;
 }
 
-/* 툴팁 */
+/* 부트스트랩 툴팁 */
 
-.help-tip {
-  top: 18px;
-  right: 18px;
-  text-align: center;
-  background-color: #bcdbea;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  font-size: 14px;
-  line-height: 26px;
-  cursor: help;
-}
-
-.help-tip:before {
-  content: "?";
-  font-weight: bold;
-  color: #fff;
+.tooltip-inner {
+  max-width: 320px;
+  /* If max-width does not work, try using width instead */
+  text-align-last: center;
+  background-color: #000;
 }
 
 /* 상자 전체 */

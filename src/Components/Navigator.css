@@ -22,8 +22,8 @@
 }
 .nav_item:hover {
   background-color: #fafafa;
+  color: #000;
 }
-
 .clicked {
   color: #000;
   font-weight: bold;

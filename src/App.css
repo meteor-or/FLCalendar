@@ -35,7 +35,7 @@ a {
 /* 헤딩 타이틀 언더바 css */
 .heading {
   border-bottom: 2px solid rgba(0, 0, 0, 0.08);
-  padding: 11px 0;
+  padding: 10px 0;
   position: relative;
 }
 .heading span {
