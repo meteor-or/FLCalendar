@@ -5,7 +5,6 @@
   padding-right: 5px;
   text-align: center;
 }
-
 /* 이벤트 바 */
 .rbc-day-slot .rbc-background-event,
 .rbc-event {
@@ -49,10 +48,13 @@
 }
 /**** tablet ****/
 @media screen and (min-width: 768px) {
+  .rbc-month-view {
+    border-top: none;
+  }
   /* 툴바 */
   .rbc-toolbar {
     position: fixed;
-    top: 10px;
+    top: 4px;
     z-index: 101;
     margin: 0;
   }

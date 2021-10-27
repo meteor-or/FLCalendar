@@ -6,7 +6,7 @@ function Header() {
     <>
       <div className="top-bar">
         <h1 className="logo">
-          <Link to="/">DailyFL</Link>
+          <Link to="/">오늘전장</Link>
         </h1>
       </div>
     </>

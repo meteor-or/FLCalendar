@@ -3,30 +3,27 @@
 .top-bar {
   position: fixed;
   width: 100vw;
-  height: 50px;
+  height: 44px;
   top: 0;
   z-index: 100;
   display: flex;
-  line-height: 50px;
   background-color: #fff;
   z-index: 101;
 }
 .logo {
   font-size: 1.3rem;
-  margin-left: 30px;
+  margin-left: 20px;
+  line-height: 44px;
 }
 /* tablet */
 @media screen and (min-width: 768px) {
   .top-bar {
     position: fixed;
-    background-color: pink;
+    border-bottom: 1px solid #ddd;
   }
 }
 
 /* pc */
 
 @media screen and (min-width: 1280px) {
-  .top-bar {
-    background-color: blue;
-  }
 }

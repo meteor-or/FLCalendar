@@ -16,6 +16,7 @@ let formats = {
 };
 function Calendarpart(params) {
   const isMobile = useMediaQuery({ maxWidth: 767 });
+
   return (
     <div className="calendar">
       <Calendar
@@ -28,8 +29,8 @@ function Calendarpart(params) {
         components={{ toolbar: CustomToolbar }}
         style={
           isMobile
-            ? { height: "calc(100vh - 100px)", width: "100%" }
-            : { height: "calc(100vh - 50px)", width: "100%" }
+            ? { height: "calc(100vh - 88px)", width: "100%" }
+            : { height: "calc(100vh - 44px)", width: "100%" }
         }
         eventPropGetter={(event, start, end, isSelected) => {
           let newStyle = {

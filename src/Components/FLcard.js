@@ -1,8 +1,11 @@
-import React from "react";
+import { useState, useRef } from "react";
 import "./FLcard.css";
-import Slider from "react-slick";
+import { Button, Overlay, Tooltip, OverlayTrigger } from "react-bootstrap";
 
 function FLcard(props) {
+  const [show, setShow] = useState(false);
+  const target = useRef(null);
+
   return (
     <div className="frontline">
       <div className="frontlineItem">
@@ -12,9 +15,9 @@ function FLcard(props) {
         <div className="frontline__infoBox">
           <h2 className="infoBox__title">{props.data.title}</h2>
           <div className="InfoBox__score">
-            <h3 className="heading">
+            <h4 className="heading">
               <span>점수</span>
-            </h3>
+            </h4>
             <ul className="scoreList">
               <li className="scoreItem">
                 <div className="score__title">목표</div>
@@ -35,13 +38,27 @@ function FLcard(props) {
             </ul>
           </div>
           <div className="InfoBox_pattern">
-            <h3 className="heading">
+            <h4 className="pattern_title heading">
               <span>패턴</span>
-            </h3>
-            <div className="descOfPattern">{props.data.pattern1}</div>
+            </h4>
+            <div className="descOfPattern">
+              {props.data.pattern1}
+              {/* {["top"].map((placement) => (
+                <OverlayTrigger
+                  key={placement}
+                  placement={placement}
+                  overlay={
+                    <Tooltip id={`tooltip-${placement}`}>
+                      Tooltip on <strong>{placement}</strong>.
+                    </Tooltip>
+                  }
+                >
+                  <Button variant="secondary">?</Button>
+                </OverlayTrigger>
+              ))} */}
+            </div>
             <div className="descOfPattern">{props.data.pattern2}</div>
           </div>
-          {/* <div className="moreInfoWrap"></div> */}
         </div>
       </div>
     </div>

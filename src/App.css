@@ -4,7 +4,7 @@
 body {
   font-family: "Spoqa Han Sans Neo", sans-serif;
   position: absolute;
-  top: 94px;
+  top: 88px;
   margin: 0;
   background-color: #fff;
 }
@@ -35,7 +35,7 @@ a {
 /* 헤딩 타이틀 언더바 css */
 .heading {
   border-bottom: 2px solid rgba(0, 0, 0, 0.08);
-  padding: 8px 0;
+  padding: 11px 0;
   position: relative;
 }
 .heading span {
@@ -57,7 +57,7 @@ a {
 /* tablet */
 @media screen and (min-width: 768px) {
   body {
-    top: 50px;
+    top: 44px;
   }
   .main_contents {
     width: 85vw;
