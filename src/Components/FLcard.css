@@ -17,7 +17,6 @@
 .frontlineItem {
   max-width: 480px;
   margin: 40px 20px;
-  padding-bottom: 20px;
   background-color: #eaeef1;
   border-radius: 20px;
   box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%),
@@ -51,13 +50,13 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 .frontline__infoBox {
-  padding: 0 15px;
+  padding: 15px 15px;
 }
 .scoreList .scoreItem:last-child {
   border-bottom: none;
 }
 .score__title {
-  min-width: 80px;
+  min-width: 50px;
   font-weight: bold;
   margin-left: 1rem;
 }

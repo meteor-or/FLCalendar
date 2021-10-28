@@ -24,18 +24,18 @@ function Frontline() {
   const [frontlines, setfrontlines] = useState([
     {
       title: "외곽 유격지대(제압전)",
-      img: "http://image.ff14.co.kr/html2/guide/img/pvpguide/sub4_img13.jpg",
+      img: "img/secure.jpg",
       goalScore: "1600",
       killScore: "5",
       baseScore:
         "1개 - 1점 | 2개 - 2점 | 3개 - 4점 | 4개 - 8점 | 5개 - 16점 | 6개 -32점",
       nodeScore: "큰 요격기 - 300점 | 작은 요격기 - 25점",
       pattern1:
-        "큰 요격기 - 10분 고정 | 작은 요격기 - 마지막 요격기가 파괴되고 4분후",
+        "큰 요격기 - 10분 고정 | 작은 요격기 - 마지막 요격기가 파괴되고 4분 후 등장합니다.",
     },
     {
       title: "봉인된 바위섬(쟁탈전)",
-      img: "http://image.ff14.co.kr/html2/guide/img/pvpguide/sub4_img10.jpg",
+      img: "img/sealrock.jpg",
       goalScore: "800",
       killScore: "5",
       baseScore: "없음",
@@ -45,7 +45,7 @@ function Frontline() {
     },
     {
       title: "영광의 평원(쇄빙전)",
-      img: "http://image.ff14.co.kr/html2/guide/img/pvpguide/sub4_img4.jpg",
+      img: "img/shatter.jpg",
       goalScore: "1600",
       killScore: "처치시 +10점 사망시 -5",
       baseScore: "1개 - 2점 | 2개 - 4점 | 3개 - 8점 ",
@@ -64,13 +64,13 @@ function Frontline() {
           ["1", "1", "1", "19 : 00", "1", "1", "1", ""],
           ["", "", "", "18 : 00", "1", "1", "1", ""],
           ["", "", "", "17 : 00", "1", "1", "1", ""],
-          ["1", "1", "2", "16 : 00", "1", "1", "4", "4"],
-          ["", "", "", "15 : 00", "1", "1", "", ""],
+          ["1", "", "", "16 : 00", "1", "1", "4", "4"],
+          ["", "1", "2", "15 : 00", "1", "1", "", ""],
           ["", "", "", "14 : 00", "1", "1", "", ""],
           ["", "", "", "13 : 00", "1", "1", "", ""],
-          ["1", "2", "1", "12 : 00", "1", "1", "4", "4"],
+          ["1", "", "", "12 : 00", "1", "1", "4", "4"],
           ["", "", "", "11 : 00", "1", "1", "", ""],
-          ["", "", "", "10 : 00", "1", "1", "", ""],
+          ["", "2", "1", "10 : 00", "1", "1", "", ""],
           ["", "", "", "9 : 00", "1", "1", "", ""],
           ["1", "", "", "8 : 00", "6", "1", "6", "6"],
         ],
@@ -78,7 +78,7 @@ function Frontline() {
     },
     {
       title: "온살 하카이르(계절끝 합전)",
-      img: "http://image.ff14.co.kr/html2/guide/img/pvpguide/sub4_img16.jpg",
+      img: "img/onsal.jpg",
       goalScore: "1600",
       killScore: "8",
       baseScore: "없음",

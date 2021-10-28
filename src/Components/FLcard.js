@@ -16,9 +16,9 @@ function FLcard(props) {
         </div>
         <div className="frontline__infoBox">
           <div className="InfoBox__score">
-            <h5 className="heading">
+            <h6 className="heading">
               <span>점수</span>
-            </h5>
+            </h6>
             <ul className="scoreList">
               <li className="scoreItem">
                 <div className="score__title">목표</div>
@@ -39,9 +39,9 @@ function FLcard(props) {
             </ul>
           </div>
           <div className="InfoBox_pattern">
-            <h5 className="pattern_title heading">
+            <h6 className="pattern_title heading">
               <span>패턴</span>
-            </h5>
+            </h6>
             <div className="descOfPattern">{props.data.pattern1}</div>
             <div className="descOfPattern">
               {props.data.title == "영광의 평원(쇄빙전)" && (
@@ -56,7 +56,13 @@ function FLcard(props) {
                     </Modal.Header>
                     <Modal.Body>
                       <Table data={props.data.table} />
-                    </Modal.Body>
+                      <em>* 숫자는 얼음 개수입니다.</em>
+                    </Modal.Body>{" "}
+                    <Modal.Footer>
+                      <Button variant="secondary" onClick={handleClose}>
+                        닫기
+                      </Button>
+                    </Modal.Footer>
                   </Modal>
                 </>
               )}

@@ -15,6 +15,9 @@
   margin-left: 20px;
   line-height: 44px;
 }
+.logo a:hover {
+  color: #000;
+}
 /* tablet */
 @media screen and (min-width: 768px) {
   .top-bar {
