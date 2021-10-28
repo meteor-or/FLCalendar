@@ -11,7 +11,10 @@
     top: 0;
   }
 }
-
+.spiner-justify-content {
+  display: flex;
+  justify-content: center;
+}
 /* pc */
 
 @media screen and (min-width: 1280px) {

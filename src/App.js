@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { HashRouter, Route } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import Frontline from "./routes/Frontline";
@@ -22,7 +22,11 @@ const Mobile = ({ children }) => {
   return isMobile ? children : null;
 };
 function App() {
-  // const [activePage, setActivePage] = useState(0);
+  let [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(false);
+  });
 
   return (
     <div>
