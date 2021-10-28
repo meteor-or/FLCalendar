@@ -8,10 +8,11 @@ function table(props) {
         <thead>
           <tr>
             {props.data.header.map((item) => (
-              <th width="250">{item}</th>
+              <th colSpan={item.colspan}>{item.title}</th>
             ))}
           </tr>
         </thead>
+        {/* tbody에 넣을 컨텐츠가  */}
         {Array.isArray(props.data.contents[0]) ? (
           <tbody>
             {props.data.contents.map((item) => (

@@ -13,15 +13,20 @@ thead {
 }
 th {
   padding: 15px 10px;
-
+  width: 200px;
   font-weight: normal;
 }
 td {
   margin: 0;
   border-bottom: 1px solid #dee2e6;
-  padding: 15px 10px;
+  padding: 5px 10px;
 }
 
 tbody tr:last-of-type {
-  border-bottom: 2px solid #7986cb;
+  border-bottom: 2px solid #cccc;
+}
+
+/* 모달창 */
+.modal-body tbody tr:first-child {
+  background-color: #ebeeff;
 }

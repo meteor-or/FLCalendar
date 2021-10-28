@@ -7,7 +7,12 @@ function General() {
     Time: 20,
     매칭조건: {
       table: {
-        header: ["레벨제한", "직업제한", "파티참가인원", "총사령부"],
+        header: [
+          { title: "레벨제한", colspan: "" },
+          { title: "직업제한", colspan: "" },
+          { title: "파티참가인원", colspan: "" },
+          { title: "총사령부", colspan: "" },
+        ],
         contents: ["잡 레벨 30", "없음", "1~4명", "총사령부 입사"],
       },
     },
@@ -43,7 +48,10 @@ function General() {
         title: "아드레날린",
         desc: "개인 리미트브레이크입니다. 전투 중 순위에 따라 축적량이 보정됩니다.",
         table: {
-          header: ["등수", "아드레날린 보너스"],
+          header: [
+            { title: "등수", colspan: "" },
+            { title: "아드레날린 보너스", colspan: "" },
+          ],
           contents: [
             ["1", "없음"],
             ["2", "1.25배 빨리 참"],
@@ -55,7 +63,11 @@ function General() {
         title: "투쟁심",
         desc: "투쟁심는 플레이어를 죽이거나 도움을 줬을 때 상승하는 게이지로 힐량과 딜량을 늘려줍니다. 최대 레벨은 100이며 20이 증가할 때마다 효과가 증가합니다. 사망시 수치가 절반으로 떨어집니다.",
         table: {
-          header: ["상태", "수치", "효과"],
+          header: [
+            { title: "상태", colspan: "" },
+            { title: "수치", colspan: "" },
+            { title: "효과", colspan: "" },
+          ],
           contents: [
             ["투쟁심 I", "20 ~ 39", "주는 데미지와 힐량이 10% 증가합니다."],
             ["투쟁심 II", "40 ~ 59", "주는 데미지와 힐량이 20% 증가합니다."],
@@ -73,7 +85,11 @@ function General() {
         title: "데미지보정",
         desc: "전장에서는 직업에 따라 주는 피해량과 받는 피해량이 보정됩니다.",
         table: {
-          header: ["직업", "주는 데미지", "받는 데미지"],
+          header: [
+            { title: "직업", colspan: "" },
+            { title: "주는 데미지", colspan: "" },
+            { title: "받는 데미지", colspan: "" },
+          ],
           contents: [
             ["나이트", "+10%", "-30%"],
             ["전사", "+10%", "-30%"],

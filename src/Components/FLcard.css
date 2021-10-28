@@ -27,15 +27,22 @@
 /* 이미지 */
 .frontline__imgBox {
   width: 100%;
+  position: relative;
 }
 .infoBox__title {
+  position: absolute;
   padding: 1rem 0;
+  margin-left: 10px;
   font-size: 1.4rem;
+  bottom: 0;
+  color: #fff;
+  z-index: 2;
 }
 .frontline__imgBox img {
   max-width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
+  filter: brightness(70%);
 }
 /* 인포 */
 .scoreList .scoreItem {
