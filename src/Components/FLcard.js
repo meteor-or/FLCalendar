@@ -12,7 +12,12 @@ function FLcard(props) {
       <div className="frontlineItem">
         <div className="frontline__imgBox">
           <h2 className="infoBox__title">{props.data.title}</h2>
-          <img src={props.data.img} alt={props.data.title}></img>
+          <img
+            src={props.data.img}
+            alt={props.data.title}
+            title="
+          (c) 2010-2021 SQUARE ENIX Published In Korea by ACTOZ SOFT CO., LTD. "
+          ></img>
         </div>
         <div className="frontline__infoBox">
           <div className="InfoBox__score">
@@ -55,8 +60,11 @@ function FLcard(props) {
                       <Modal.Title>얼음 등장 시간표</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                      <Table data={props.data.table} />
                       <em>* 숫자는 얼음 개수입니다.</em>
+                      <Table data={props.data.table} />
+                      <br /> <strong> - 특수 패턴 - </strong>
+                      <br /> 19:45 작은 얼음 모두 | 14:00, 12:00, 10:00, 8:00 큰
+                      얼음 하나씩
                     </Modal.Body>{" "}
                     <Modal.Footer>
                       <Button variant="secondary" onClick={handleClose}>
