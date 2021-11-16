@@ -13,7 +13,7 @@ function FLcard(props) {
         <div className="frontline__imgBox">
           <h2 className="infoBox__title">{props.data.title}</h2>
           <img
-            src={props.data.img}
+            src={process.env.PUBLIC_URL + props.data.img}
             alt={props.data.title}
             title="
           (c) 2010-2021 SQUARE ENIX Published In Korea by ACTOZ SOFT CO., LTD. "

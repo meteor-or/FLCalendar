@@ -24,7 +24,7 @@ function Frontline() {
   const [frontlines, setfrontlines] = useState([
     {
       title: "외곽 유격지대(제압전)",
-      img: "https://i.ibb.co/2ZZSKpL/secure.jpg",
+      img: "img/secure.jpg",
       goalScore: "1600",
       killScore: "5",
       baseScore:
@@ -35,7 +35,7 @@ function Frontline() {
     },
     {
       title: "봉인된 바위섬(쟁탈전)",
-      img: "https://i.ibb.co/JCKWNhC/sealrock.jpg",
+      img: "img/sealrock.jpg",
       goalScore: "800",
       killScore: "5",
       baseScore: "없음",
@@ -45,7 +45,7 @@ function Frontline() {
     },
     {
       title: "영광의 평원(쇄빙전)",
-      img: "https://i.ibb.co/W5gxZrw/shatter.jpg",
+      img: "img/shatter.jpg",
       goalScore: "1600",
       killScore: "처치시 +10점 사망시 -5",
       baseScore: "1개 - 2점 | 2개 - 4점 | 3개 - 8점 ",
@@ -78,7 +78,7 @@ function Frontline() {
     },
     {
       title: "온살 하카이르(계절끝 합전)",
-      img: "https://i.ibb.co/FxTS00S/onsal.jpg",
+      img: "img/onsal.jpg",
       goalScore: "1600",
       killScore: "8",
       baseScore: "없음",
