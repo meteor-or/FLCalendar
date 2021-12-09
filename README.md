@@ -2,7 +2,10 @@
 
 ---
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7e75a7c2-2935-4bb1-8f82-36646f7d406c/Untitled.png)
+![오늘전장 메인 페이지](https://user-images.githubusercontent.com/82145837/145314212-b3f676ac-2cbf-4644-8aab-6f85037cf5e0.png)
+
+
+🌏 **사이트 주소 :** [https://dailyfrontline.netlify.app](https://dailyfrontline.netlify.app/)
 
 🗓️ **작업기간** : 2021.1
 
